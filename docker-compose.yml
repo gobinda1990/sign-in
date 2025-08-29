@@ -10,5 +10,5 @@ services:
     image: frontend:latest
     container_name: frontend
     ports:
-      - "8083:80"
+      - "8084:80"
     

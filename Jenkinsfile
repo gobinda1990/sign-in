@@ -39,6 +39,7 @@ pipeline {
                     echo "Waiting for backend to start..."
                     sleep 15
                     curl -f http://localhost:8083/actuator/health || (echo 'Health check failed!' && exit 1)
+                    curl -f http://localhost:8083/auth/login || (echo 'Health check failed!' && exit 1)
                     """
                 }
             }

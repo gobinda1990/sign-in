@@ -16,7 +16,7 @@ public class SecurityConfig  {
                 .anyRequest().authenticated()          
             )
             .formLogin(form -> form
-                .loginProcessingUrl("auth/login")         
+                .loginProcessingUrl("/auth/login")         
             );
 
         return http.build();
